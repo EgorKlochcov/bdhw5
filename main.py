@@ -79,10 +79,6 @@ def search_client(conn,**search_data):
 
 conn = psycopg2.connect(database='SOME_DB', user='postgres', password="SOME_PASSWORD")
 with conn:
-<<<<<<< HEAD
-
-
-=======
     create_db(conn)
     add_client(conn, 1, 'Ivan', 'Ivanov', 'iviv123@mail.ru', 88005553535)
     add_phone(conn, 89826661144, 1)
@@ -90,5 +86,4 @@ with conn:
     change_client(conn, 1, first_name='Ivan')
     search_client(conn, email='iviv123@mail.ru')
     delete_client(conn, 1)
->>>>>>> 76e49e4 (upd)
 conn.close()
